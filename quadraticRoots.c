@@ -5,12 +5,12 @@
 int rootsQuadratic(int ,int,int);
 void main()//main function
 {
-    int a,b,c;
+    float a,b,c;
     printf("\n enter the values of a,b and c");
     scanf("%d %d %d",&a,&b,&c);
     rootsQuadratic(a,b,c);
 }
-int rootsQuadratic(int a,int b,int c)//function to find roots
+int rootsQuadratic(float a,float b,float c)//function to find roots
 {
    float d,deno,r1,r2;
    d=(b*b)-(4*a*c);
