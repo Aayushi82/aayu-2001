@@ -2,15 +2,17 @@
 #include<stdio.h>
 #include<conio.h>
 #include<math.h>
-int rootsQuadratic(int ,int,int);
-void main()//main function
+void rootsQuadratic(float ,float,float);
+int main()//main function
 {
     float a,b,c;
     printf("\n enter the values of a,b and c");
-    scanf("%d %d %d",&a,&b,&c);
+    scanf("%f %f %f",&a,&b,&c);
     rootsQuadratic(a,b,c);
+    getch();
+    return 0;
 }
-int rootsQuadratic(float a,float b,float c)//function to find roots
+void rootsQuadratic(float a,float b,float c)//function to find roots
 {
    float d,deno,r1,r2;
    d=(b*b)-(4*a*c);
@@ -19,7 +21,7 @@ int rootsQuadratic(float a,float b,float c)//function to find roots
    {
        printf("\n real roots");
        r1=(-b+sqrt(d))/deno;
-       r2=(-b+sqrt(d))/deno;
+       r2=(-b-sqrt(d))/deno;
        printf("\n root 1=%f \t root 2=%f",r1,r2);
 
    }
@@ -34,5 +36,4 @@ int rootsQuadratic(float a,float b,float c)//function to find roots
    {
        printf("imaginary roots");
    }
-    return 0;
 }
