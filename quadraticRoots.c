@@ -34,4 +34,5 @@ int rootsQuadratic(int a,int b,int c)//function to find roots
    {
        printf("imaginary roots");
    }
+    return 0;
 }
