@@ -6,7 +6,7 @@ void oddPrint(int);
 void main()
 {
     int n;
-    printf("enter the no.uptil which you want to print the odd no.");
+    printf("enter the no. uptil where u want the sum of square of odd natural no.");
     scanf("%d",&n);
     oddPrint(n);
 }
